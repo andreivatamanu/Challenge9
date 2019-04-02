@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Challenge9</string>
+    <string name="empty">empty</string>
+    <string name="read_from_internal">read_from_external</string>
+    <string name="read_from_external">Read From External</string>
+    <string name="you_must_agree">You must agree</string>
+    <string name="agree_terms">Agree Terms</string>
+    <string name="password">PASSWORD</string>
+    <string name="email">Email</string>
+    <string name="last_name">Last Name</string>
+    <string name="clear">CLEAR</string>
+    <string name="show">Show</string>
+    <string name="save">Save</string>
+    <string name="first_name">First Name</string>
+    <string name="Empty">Empty</string>
+    <string name="challenge1">Challenge1</string>
+</resources>

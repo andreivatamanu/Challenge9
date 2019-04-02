@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Challenge1">
+
+
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        tools:context=".Challenge1">
+
+        <EditText
+            android:id="@+id/editText_firstName"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_8_dp"
+            android:onClick="onClickSave"
+            android:text="@string/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox_terms" />
+
+        <TextView
+            android:id="@+id/textView_displayData"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_readExternal" />
+
+        <Button
+            android:id="@+id/btn_showData"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:onClick="onClickShow"
+            android:text="@string/show"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+
+        <Button
+            android:id="@+id/btn_clearData"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:onClick="onClickClear"
+            android:text="@string/clear"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_showData" />
+
+        <EditText
+            android:id="@+id/editText_lastName"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/last_name"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_firstName" />
+
+        <EditText
+            android:id="@+id/editText_email"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_lastName" />
+
+        <EditText
+            android:id="@+id/editText_password"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+
+        <CheckBox
+            android:id="@+id/checkBox_terms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/agree_terms"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText_password" />
+
+        <TextView
+            android:id="@+id/textView_checkBoxError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_8_dp"
+            android:text="@string/you_must_agree"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBox_terms"
+            app:layout_constraintStart_toEndOf="@+id/checkBox_terms"
+            app:layout_constraintTop_toBottomOf="@+id/editText_password"
+            tools:ignore="RtlCompat" />
+
+        <Button
+            android:id="@+id/button_readInternal"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="wrap_content"
+            android:onClick="onClickReadFromInternal"
+            android:text="@string/read_from_internal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_clearData" />
+
+        <Button
+            android:id="@+id/button_readExternal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClickReadFromExternal"
+            android:text="@string/read_from_external"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_readInternal" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
